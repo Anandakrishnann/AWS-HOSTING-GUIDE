@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.guide-container { width: 100%; margin: 0 auto; padding: 20px; background-color: #000000; }
+.welcome-text { margin-top: 20px; font-size: 3rem; text-align: center; font-weight: 900; letter-spacing: 2px; color: #ffffff; text-transform: uppercase; }
+hr { border: none; height: 2px; background-color: #000; margin: 15px 0; }
+.dropdown-container { display: flex; flex-direction: column; gap: 20px; padding: 10px; }
+.dropdown-section { background-color: #000000; padding: 15px 20px; border: 2px solid #000; border-radius: 10px; cursor: pointer; }
+.dropdown-section:hover { background-color: #ffffff; color: #000000; transform: translateY(-5px); accent-color: rgb(255, 255, 255); }
+.dropdown-heading { font-weight: bold; font-size: 1.8rem; margin: 0; color: #ffffff; transition: color 0.3s; }
+.dropdown-section:hover .dropdown-heading { color: #000000; accent-color: rgb(255, 255, 255);  }
+.guide-steps { padding: 20px; margin-top: 10px; border: 1px solid #000; border-radius: 8px; background-color: #f9f9f9; color: #000; animation: fadeIn 0.5s ease-in-out; font-size: 1.1rem; line-height: 1.6; }
+.commands { margin-top: 20px; font-size: 1rem; font-weight: bold; letter-spacing: 2px; color: #000; text-transform: uppercase; }
+.command-container { display: flex; align-items: center; justify-content: space-between; padding-right: 50px; font-weight: 500; font-weight: 500;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.copy-button { background-color: #000000; color: white; border: none; padding: 10px 30px; border-radius: 3px; cursor: pointer; }
+.copy-button.copied { background-color: #28a745; }
+pre { background-color: #ffffff; padding: 10px; border-radius: 5px; margin-bottom: 10px; }
+.exp{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+}
+.checkbox{
+    margin-left: 1300px;
+    margin-bottom: 10px;
+    width: 30px;  /* Increase width */
+    height: 30px; /* Increase height */
+    border: 3px solid #ffffff; /* Optional: adjust border */
+    accent-color: rgb(255, 255, 255); 
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}   
+
+.ctc-button {
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 650px;
+    margin-top: 20px;
+  }
+  
+  .ctc-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(1200deg, transparent, rgba(0, 0, 0, 0.4), transparent);
+    transition: all 0.6s;
+  }
+  
+  .ctc-button:hover::before {
+    left: 100%;
+  }

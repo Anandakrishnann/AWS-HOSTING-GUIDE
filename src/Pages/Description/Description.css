@@ -1,0 +1,61 @@
+.description{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.description h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.description h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.description p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.description hr{
+    background-color: white;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+}
+
+.ctb-button {
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  .ctb-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(1200deg, transparent, rgba(0, 0, 0, 0.4), transparent);
+    transition: all 0.6s;
+  }
+  
+  .ctb-button:hover::before {
+    left: 100%;
+  }
