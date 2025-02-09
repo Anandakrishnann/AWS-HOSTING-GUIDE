@@ -94,8 +94,8 @@ const Home = () => {
     <div className="container">
       <canvas ref={particlesRef} className="particles"></canvas>
       <div className="content">
-        <h1 className="glitch" data-text="🚀 WELCOME PYTHON DEVELOPERS 🚀">
-          🚀 WELCOME PYTHON DEVELOPERS 🚀
+        <h1 className="glitch" data-text="🚀 WELCOME DJANGO DEVELOPERS 🚀">
+          🚀 WELCOME DJANGO DEVELOPERS 🚀
         </h1>
         <h2 className="subtext">{subText}</h2>
         <button onClick={description} className="cta-button">

@@ -89,12 +89,11 @@ pip install -r requirements.txt: Installs Python packages listed in requirements
     {
       step: 9,
       command: `CREATE DATABASE mydb;
-      CREATE USER myuser WITH PASSWORD 'mypassword';
-      ALTER ROLE myuser SET client_encoding TO 'utf8';
-      ALTER ROLE myuser SET default_transaction_isolation TO 'read committed';
-      ALTER ROLE myuser SET timezone TO 'UTC';
-      GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
-      \q
+CREATE USER myuser WITH PASSWORD 'mypassword';
+ALTER ROLE myuser SET client_encoding TO 'utf8';
+ALTER ROLE myuser SET default_transaction_isolation TO 'read committed';
+ALTER ROLE myuser SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
       `,
       explanation: `CREATE DATABASE mydb;: Creates a new database named mydb.
       CREATE USER myuser WITH PASSWORD 'mypassword';: Creates a new user with login privileges.
