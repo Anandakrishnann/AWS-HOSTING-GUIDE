@@ -17,15 +17,18 @@ body {
   font-family: "Orbitron", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  padding: 0 10px; /* Added padding for small screen spaces */
 }
 
 .particles {
@@ -40,10 +43,11 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
+  padding: 1rem;
 }
 
 .glitch {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -102,7 +106,7 @@ body {
 }
 
 .subtext {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 2rem 0;
   opacity: 0;
   animation: fadeIn 2s ease-out forwards;
@@ -117,7 +121,7 @@ body {
 .cta-button {
   position: relative;
   padding: 1rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--text-color);
@@ -149,9 +153,54 @@ body {
   background-color: var(--primary-color);
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .glitch {
+    font-size: 3rem; /* Slightly reduced for medium screens */
+  }
+
+  .subtext {
+    font-size: 1.5rem; /* Reduced size */
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+    margin: 10px;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .glitch {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .container {
+    height: auto;
+    padding: 0;
+  }
+
+  .content {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .glitch {
+    font-size: 1.8rem;
   }
 
   .subtext {
@@ -159,8 +208,16 @@ body {
   }
 
   .cta-button {
-    font-size: 1rem;
-    padding: 0.8rem 1.6rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  .container {
+    height: auto;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 1rem;
   }
 }
-
